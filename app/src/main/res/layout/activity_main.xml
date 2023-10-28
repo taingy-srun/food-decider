@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dd_logo" />
+
+        <TextView
+            android:id="@+id/tv_food"
+            android:text="Click button to decide your food!"
+            android:padding="16dp"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@color/material_dynamic_primary30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_decide"
+            android:text="Decide"
+            android:padding="16dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/material_dynamic_primary60"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_alignParentBottom="true"
+       android:orientation="horizontal"
+       android:padding="16dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <EditText
+           android:id="@+id/et_menu"
+           android:layout_weight="1"
+           android:layout_marginRight="8dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <Button
+           android:id="@+id/btn_add"
+           android:text="Add"
+           android:drawableLeft="@drawable/baseline_create_24"
+           android:layout_width="100dp"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+</RelativeLayout>
